@@ -1,13 +1,31 @@
 {
   "name": "dclient",
   "version": "1.0.0",
-  "description": "a dnspod client by node.js",
+  "description": "a Dnspod client by Node.js",
+  "tags": [
+    "dnspod",
+    "nodejs",
+    "client",
+    "api"
+  ],
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint && npm run test-ci",
+    "test-ci": "mocha test/test.js",
+    "lint": "eslint lib/ *.js && echo Lint passed."
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AlphaTr/dclient.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlphaTr/dclient/issues"
+  },
+  "author": "AlphaTr <alphatr@alphatr.com>",
+  "engines": {
+    "node": ">=0.9.0"
+  },
+  "license": "MIT",
   "dependencies": {
     "es6-promise": "^3.0.2",
     "lodash": "^3.10.1",
