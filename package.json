@@ -1,7 +1,7 @@
 {
   "name": "dclient",
-  "version": "1.0.0",
-  "description": "a Dnspod client by Node.js",
+  "version": "1.0.1",
+  "description": "A Dnspod client by Node.js",
   "tags": [
     "dnspod",
     "nodejs",
